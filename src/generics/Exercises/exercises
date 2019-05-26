@@ -1,0 +1,7 @@
+1. Stwórz klasę generyczną Pair, która przechowuje dwie wartości, dowolnych typów.
+2. Stwórz typ generyczny List, który będzie służył do przechowywania elementów wybranego typu.
+3. Stwórz klasę Map, która będzie kontenerem słownikowym - kluczowi mamy przypisaną wartość. Klasa powinna posiadać metodę put, która przyjmuje dwa parametry: klucz i wartość.
+Powinna także posiadać metodę get, która przyjmuje jeden parametr - klucz, a zwraca wartość.
+Dodatkowo dopisz metodę remove, która jako parametr przyjmuje klucz, a która usuwa parę klucz - wartość dla zadanego klucza.
+4. Stwórz typ List w taki sposób, aby elementy były zachowywane w sposób taki:
+- każdy element "pamięta" element, który jest następny.
