@@ -103,22 +103,22 @@ public class MethodsWithLists {
 
     //10. Tworzymy metodę zadanie10, która za parametr przyjmie listę łańcuchów znaków, a która zwróci zbiór obiektów typu Pair (tworzonego na poprzednich zajęciach),
     // którego lewy element to łańcuch znaków, który wystąpił w liście, a prawy to liczba wystąpień tego łańcucha.
-    public static Set<Pair> ex10(List<String> list){
-        Set<Pair<String, Integer>> pairs = new HashSet<>();
-        int i = 0;
-        String stringBox = new String();
-        while(list.size()>0){
-            int sizeBeforeRemove = list.size();
-            stringBox = list.get(0);
-            final String qa = stringBox;
-            list.removeIf(s -> {s.equals(qa)});
-            list.forEach(element -> System.out.println(element));
-            for (String s : list) {
-                System.out.println(s);
-            }
-        }
-        return new Pair<String, Integer>(list, value);
-    }
+//    public static Set<Pair> ex10(List<String> list){
+//        Set<Pair<String, Integer>> pairs = new HashSet<>();
+//        int i = 0;
+//        String stringBox = new String();
+//        while(list.size()>0){
+//            int sizeBeforeRemove = list.size();
+//            stringBox = list.get(0);
+//            final String qa = stringBox;
+//            list.removeIf(s -> {s.equals(qa);});
+//            list.forEach(element -> System.out.println(element));
+//            for (String s : list) {
+//                System.out.println(s);
+//            }
+//        }
+//        return new Pair<String, Integer>(list, value);
+//    }
 //11. Tworzymy klasę Converter, która będzie typem generycznym, która będzie miała w generyczny sposób napisane metody z zadań 7 oraz 8 (nazwijmy je toSet oraz toList).
 //12. W klasie Converter zamieniamy metody na statyczne metody generyczne (googlujemy).
 //13. Napisz metodę, która przyjmie jako argument listę łańcuchów znaków - nazw drużyn. Metoda zwróci listę zbiorów par (obydwa elementy pary to łańcuchy znaków - nazwy drużyn). Każdy kolejny element listy będzie reprezentował spotkania rozgrywane w kolejce rozgrywek. W jednej kolejce jedna drużyna może zagrać tylko raz, każda drużyna ma zagrać z każdą inną drużyną raz oraz najlepiej, aby w każdej kolejce było jak najwięcej meczów.

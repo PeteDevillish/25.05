@@ -1,7 +1,5 @@
 package generics.Exercises;
 
-import org.omg.CORBA.Object;
-
 import java.util.Arrays;
 
 public class List<T> {

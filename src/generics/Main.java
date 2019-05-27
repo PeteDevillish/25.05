@@ -1,6 +1,7 @@
 package generics;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,5 +20,9 @@ public class Main {
 
         Box<Unicorn> unicornBox = new Box<>(new Unicorn("white", true));
         System.out.println(unicornBox.getElement().getHornColor());
+
+        Box<List<Integer>>box1=new Box<>(new ArrayList<Integer>());
+        System.out.println(box1.getElement().size());
+
     }
 }
